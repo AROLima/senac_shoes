@@ -1,11 +1,78 @@
 /* Estilizações globais */
+
 body{
-    background-color: teal;
+    background-color: #f7f7f7;
+    margin: 0px;
+    margin-top: 60px;
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 60px;
+    justify-items: center; /*Centraliza na horizontal todos os itens */
+    
+}
+
+img {
+    max-width: 100%;
+    display: block; /* faz com que o elemento se comporte como um block */
+}
+a{
+    text-decoration: none;
+}
+
+p, h1, h2, h3 {
+    margin: 0;
+}
+
+p{
+    font-size: 20px;
+}
+
+/* Estilização do menu  */
+.menu{
+     display: flex; /*garante que os links sempre vão estar um ao lado do outro */
+     gap: 20px;
+     justify-content: center;
+    
+
+}
+.menu a {
+    text-transform: uppercase;
+    background-color: #fff;
+    padding: 15px 30px;
+    color: #000;
+    border-radius: 10px;
+}
+.menu a:hover{
+    background-color: #9353ff;
+    color: #f7f7f7;
+
 }
 
 /* Estilização do conteúdo */
 
+
 .conteudo {
+    max-width: 1000px   ;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+.botao{
+    background-color: #9353ff;
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: #ffF;
+    text-transform: uppercase;
+}
+.botao:hover{
+    background-color: #A9FF53;
+    color: #000;
+}
+
+/* estilização do footer */
+.rodape{
+    background-color: #fff;
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+    
 }
